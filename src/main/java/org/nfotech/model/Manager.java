@@ -17,6 +17,7 @@ public class Manager extends Staff {
         return role;
     }
 
+    //Manager can hire a cashier
     public String hireACashier(Manager manager, int age, Qualification qualification) {
         if (!manager.getRole().equals(Role.MANAGER)) {
             if (age >= 30 && qualification == Qualification.ACCOUNTANT) {
